@@ -28,8 +28,9 @@ body {
 	padding: 0;
 	margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    line-height: 1.5; /* proklad mezi radky */
+    /*font-size: 15px;*/
+	line-height: 1.5; /* proklad mezi radky */
+	
 }
 
 
@@ -42,4 +43,370 @@ a:hover,
 a:focus,
 a:active {
 	color: #2b80b9;
+}
+
+
+/*mobil-----------------------------*/
+*body{
+	max-width:480px;
+	
+}
+
+.uvod{
+	max-width: 480px;
+	background-color:#f5f5f5;
+	position:relative;
+	padding:20px 20px 0px 20px;
+}
+.logo{
+	max-width:80px;
+	position: absolute;
+	top:10px;
+	left:20px;
+}
+.hlavicka-vpravo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;}
+
+
+.uvodnimenu{
+	text-transform:uppercase;
+	text-decoration: none;
+	color:#a5a5a5a5;
+	font-size:12px;
+	
+	
+}
+.menu{
+	margin:65px 10px 30px 0px;
+	color:#959595;		
+}
+
+li{
+	padding: 10px 180px;
+	list-style-type:none;
+	text-align: center;
+	border-width: 0px 0px 0.3px 0;
+	border-style:solid;
+	border-color:#a5a5a5a5;}
+ul{
+	padding:0px;}
+
+.tlacitko{
+	padding:5px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius:5px;
+	border-color:black;
+	color:black;		
+}
+.tlacitko-primarni{
+	position:absolute;
+	right: 160px;
+	top:20px;
+	font-size:13px;
+}
+.tlacitko-sekundarni{
+	position:absolute;
+	right: 20px;
+	top:20px;
+	font-size:13px;
+}
+.tlacitko:hover{
+	color:white;
+	border-color:#3498db;
+	background:#3498db;
+}
+h1{
+	font-size:20px;
+}
+img{
+	max-width: 480px;
+}	
+.vlastnosti{
+	padding:5px 20px;
+}
+.vlastnost{
+	border: 1px solid #a5a5a5a5;
+	border-radius:5px;
+	margin:0px 0px 10px 0px;
+	padding:10px 10px 10px 100px;
+}
+p{
+	font-size:13px;}	
+h2{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	margin:0px;
+	font-size:15px;
+}
+.ikona-kufrik{
+	position:relative;
+	}
+.kufrik{
+	position:absolute;
+	top:30px;
+	left:30px;
+	max-width:40px;
+}	
+	.ikona-slunce{
+	position:relative;
+}
+.slunce{
+	position:absolute;
+	top:30px;
+	left:30px;
+	max-width:40px;
+}
+		
+.ikona-srdce{
+	position:relative;
+}
+.srdce{
+	position:absolute;
+	top:30px;
+	left:30px;
+	max-width:40px;
+}
+.ikona-zvuk{
+	position:relative;
+}
+.zvuk{
+	position:absolute;
+	top:30px;
+	left:30px;
+	max-width:40px;
+}		
+.sekce-cerna{
+	background-color:black;
+	max-width:480px;
+}
+.sekce-bila{
+	max-width:480px;
+}
+.paticky{
+	color:#a5a5a5a5;
+	text-decoration: none;
+}
+.copyright{
+	color:#a5a5a5a5;
+	font-size:13px;
+}
+a{
+	font-size:13px;
+}
+
+/*TABLET------------------------------------------*/
+@media (min-width:480px) {
+body{
+	max-width:768px;
+}
+.uvod{
+	max-width:768px;
+}
+.hlavicka-vpravo{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;	
+}
+.uvodnimenu{
+	text-transform:uppercase;
+	text-decoration: none;
+	color:#a5a5a5a5;	
+}
+.menu{
+	margin: 65px 0px 30px 0px;
+}
+li{
+	padding: 10px;
+	text-align: center;
+	float:right;
+	border-width: 0px 0.5px 0px 0px;
+}
+ul{
+	padding:0px;
+}
+a{
+	font-size:13px;
+}
+
+.logo{
+	max-width: 120px;
+}
+img{
+	max-width: 100%;
+}
+.vlastnosti{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+.vlastnost{
+	max-width: 45%;
+	margin:10px 10px;
+}
+h1{
+	font-size:25px;
+}
+p{
+	font-size:15px;
+}
+h2{
+	
+	font-size:20px;	
+}
+.tlacitko-velke{
+	font-size:15px;
+}
+.minitext{
+	font-size:14px;
+}
+a{
+	font-size:14px;
+}
+.tlacitko-sekundarni{
+	font-size:15px;
+}
+.tlacitko-primarni{
+	right:175px;
+	font-size:15px;
+}
+.sekce-cerna{
+	max-width:768px;
+	height: 50px;
+	font-size:18px;
+}
+.sekce-bila{
+	max-width:768px;
+}
+.copyright{
+	width:50%;
+	padding:15px;
+}
+}		
+
+/*DESTOP------------------------------------------------*/
+
+@media (min-width:768px){
+body{
+	max-width:1540px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+.uvod{
+	max-width:1540px;
+	padding:50px 100px 0px 100px;
+	min-height: 600px;
+}
+.logo{
+	top:50px;
+	left:100px;
+}
+.tlacitko{
+	font-size:13px;
+	font-weight: 600;
+}
+.tlacitko-primarni{
+	top:50px;
+	right:240px;
+}
+.tlacitko-sekundarni{
+	position:absolute;
+	top:50px;
+	right:100px
+}
+.menu{
+	position:absolute;
+	right:320px;
+	top:45px;
+	margin:0px;
+}
+a{
+	color:#959595;
+	font-size:13px;
+}
+li{
+	border:none;
+}
+.logo{
+	max-width:150px;
+}
+h1{
+	margin:100px 0px 30px 0px;
+	font-size:44px;
+	max-width:420px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+p{
+	font-size:18px;
+	max-width:420px;
+	margin:0px 0px 30px 0px;
+}
+.tlacitko-velke{
+	font-size:16px;
+	font-weight:600px;
+	padding:15px;
+}
+.minitext{
+	margin:20px 0px;
+	font-size:13px;
+}
+.uvod{
+	position:relative;
+}
+img{
+	max-width: 650px;
+	position:absolute;
+	bottom:0px;
+	right:100px;
+}
+.vlastnosti{
+	font-size:15px;
+	margin:50px 50px;
+
+}
+.vlastnost{
+	padding:30px 30px 30px 100px;	
+}
+.ikona-kufrik .ikona-slunce .ikona-srdce .ikona-zvuk{
+	margin:30px;
+}
+p {
+	font-size:15px;
+}
+h2{
+	font-size:17px;
+}
+a{
+	color:#3498db;
+}
+.sekce-cerna{
+	max-width:1540px;
+	height: 130px;}
+.sekce-bila{
+	max-width:1540px;
+}
+.paticka{
+	display:flex;
+	flex-direction: row-reverse;
+	flex-wrap:wrap;
+	justify-content:space-around;	
+}
+.paticka-menu{
+	padding:50px 0px 50px 0px;
+	margin:0;
+	font-size:13px;	
+}
+.paticky{
+	color:white;
+}
+.copyright{
+	padding:50px 0px 50px 0px;
+	margin:0;
+	font-size:13px;
+	font-weight: bold;
+}
 }
